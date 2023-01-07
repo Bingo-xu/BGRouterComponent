@@ -1,0 +1,34 @@
+PODS:
+  - BGRouterComponent (0.1.0):
+    - BGRouterComponent/BGAnnotator (= 0.1.0)
+    - BGRouterComponent/BGModuleService (= 0.1.0)
+    - BGRouterComponent/BGRouter (= 0.1.0)
+    - YYModel
+  - BGRouterComponent/BGAnnotator (0.1.0):
+    - YYModel
+  - BGRouterComponent/BGModuleService (0.1.0):
+    - BGRouterComponent/BGAnnotator
+    - YYModel
+  - BGRouterComponent/BGRouter (0.1.0):
+    - BGRouterComponent/BGAnnotator
+    - YYModel
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - BGRouterComponent (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - YYModel
+
+EXTERNAL SOURCES:
+  BGRouterComponent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BGRouterComponent: 6267f713df119c1c28017b853d658b2a4ff11db1
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: c059acdd59acef899244aab62082a9b34d0f9ec3
+
+COCOAPODS: 1.11.3

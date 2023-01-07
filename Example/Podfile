@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'BGRouterComponent_Example' do
+  pod 'BGRouterComponent', :path => '../'
+  
+  target 'BGRouterComponent_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

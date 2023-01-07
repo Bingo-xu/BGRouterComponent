@@ -1,0 +1,51 @@
+{
+  "name": "BGRouterComponent",
+  "version": "0.1.0",
+  "summary": "A short description of BGRouterComponent.",
+  "description": "组件化工程路由服务工具，用于组件化注册，实现工程组件化",
+  "homepage": "https://github.com/bingoxu/BGRouterComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "bingoxu": "bingoxu@yeahka.com"
+  },
+  "source": {
+    "git": "https://github.com/bingoxu/BGRouterComponent.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "BGRouterComponent/Classes/**/*",
+  "dependencies": {
+    "YYModel": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "BGAnnotator",
+      "source_files": "BGRouterComponent/Classes/BGAnnotator/*.{h,m}"
+    },
+    {
+      "name": "BGModuleService",
+      "source_files": "BGRouterComponent/Classes/BGModuleService/*.{h,m}",
+      "dependencies": {
+        "BGRouterComponent/BGAnnotator": [
+
+        ]
+      }
+    },
+    {
+      "name": "BGRouter",
+      "source_files": "BGRouterComponent/Classes/BGRouter/*.{h,m}",
+      "dependencies": {
+        "BGRouterComponent/BGAnnotator": [
+
+        ]
+      }
+    }
+  ]
+}
